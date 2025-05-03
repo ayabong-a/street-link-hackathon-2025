@@ -1,3 +1,25 @@
-body{
-    background-color: rgb(226, 43, 189);
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h2{
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.vendor-system {
+    width: 250px;
+    background-color: #006666;
+    padding: 1rem;
+}
+
+.dashboard {
+    flex: 1;
+    padding: 1rem;
+    background-color: #990066;
 }
