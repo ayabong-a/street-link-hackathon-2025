@@ -24,6 +24,16 @@ h2 {
     background-color: #990066;
 }
 
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
 
 .register-btn {
     display: block;
@@ -67,5 +77,203 @@ h2 {
 
 img {
     width: 20px;
-    height: 20px
+    height: 20px;
+}
+
+.login-btn {
+    padding: 0.5rem 1rem;
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #005a9e;
+}
+
+.dashboard-content {
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.welcome-msg {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: #f4f4f4;
+    border-left: 6px solid #006666;
+    color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 10px;
+    flex: 1;
+    margin: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: #990066;
+}
+
+.stat-card p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #006666;
+}
+
+
+.quick-actions {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: #333;
+}
+
+.quick-actions h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #990066;
+}
+
+.quick-actions button {
+    margin: 0.3rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.quick-actions button:hover {
+    background-color: #005a9e;
+}
+
+.vendor-form {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    color: #1a1a1a;
+    max-width: 500px;
+}
+
+.vendor-form h3 {
+    color: #006666;
+    margin-bottom: 1rem;
+}
+
+.vendor-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.vendor-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.vendor-form button {
+    margin-top: 1.2rem;
+    background-color: #990066;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.vendor-form button:hover {
+    background-color: #cc3399;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dim background */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    color: #1a1a1a;
+}
+
+.close-btn {
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal-content h3 {
+    color: #006666;
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    margin-top: 1.2rem;
+    background-color: #990066;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #cc3399;
 }
