@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local Vendors Platform</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet" />
 </head>
@@ -18,9 +17,15 @@
         <button onclick="exploreMap()">Explore Now</button>
         <button onclick="goToVendorSystem()">For Vendors</button>
     </header>
+
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search by product or service..." />
+    </div>
+
     <main>
         <div id="map"></div>
     </main>
+
     <script src="/src/script.js"></script>
 </body>
 

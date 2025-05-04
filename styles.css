@@ -82,3 +82,25 @@ main {
         transform: translateY(0);
     }
 }
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#search-input {
+    padding: 12px 20px;
+    font-size: 1rem;
+    width: 300px;
+    border: 2px solid #6a11cb;
+    border-radius: 30px;
+    outline: none;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#search-input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 10px rgba(37, 117, 252, 0.4);
+}
