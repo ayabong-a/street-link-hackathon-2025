@@ -1,3 +1,4 @@
+require("dotenv").config();
 mapboxgl.accessToken = process.env.ACCESS_TOKEN;
 
 function exploreMap() {
