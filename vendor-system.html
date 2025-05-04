@@ -66,18 +66,19 @@
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <h3>Vendor Registration</h3>
-            <form id="vendor-registration-form">
-                <label for="vendorName">Vendor Name:</label>
-                <input type="text" id="vendorName" name="vendorName" required />
-
-                <label for="product">Product/Service:</label>
-                <input type="text" id="product" name="product" required />
-
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location" required />
+            <form id="vendor-form">
+                <input type="text" id="vendor-name" name="name" placeholder="Your Name" required />
+                <input type="text" id="vendor-type" name="product" placeholder="Products / Service" required />
+                <input type="text" id="vendor-location" name="location" placeholder="Location" required />
+                <input type="text" name="experience" placeholder="Years of Experience" />
+                <input type="text" name="uniqueSellingPoint" placeholder="What makes you unique?" />
+                <button type="button" id="generate-description">Generate Description</button>
+                <textarea rows="4" name="description" id="description" readonly
+                    placeholder="Generated Description..."></textarea>
 
                 <button type="submit">Submit</button>
             </form>
+
         </div>
     </div>
 
