@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetLink</title>
+    <link rel="stylesheet" href="vendor-system-styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="vendor-system">
+            <h2>VENDOR SYSTEM</h2>
+            <button class="register-btn">Register as Vendor</button>
+
+            <ul class="sidebar-menu">
+                <li><span class="icon"><img src="/assests/icons/icons8-home.svg" alt="home icon"></span> Home</li>
+                <li><span class="icon"><img src="/assests/icons/icons8-person-64.png" alt="person icon"></span> Vendor
+                    Directory</li>
+                <li><span class="icon"><img src="/assests/icons/cart_9871463.png" alt="product icon"></span> Product
+                    Catalog</li>
+                <li><span class="icon"><img src="/assests/icons/icons8-submit-document-30.png" alt="submit icon"></span>
+                    Submit Request</li>
+                <li><span class="icon"><img src="/assests/icons/icons8-question-mark-64.png"
+                            alt="question mark icon"></span> Support / Help Center</li>
+            </ul>
+        </div>
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <h2>Dashboard</h2>
+                <button class="login-btn">Login</button>
+            </div>
+
+            <div class="dashboard-content">
+                <p class="welcome-msg">Welcome back! Here's what's happening:</p>
+
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>Total Vendors</h3>
+                        <p>128</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Requests Pending</h3>
+                        <p>34</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Products Listed</h3>
+                        <p>245</p>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <h3>Quick Actions</h3>
+                    <button>Add Product</button>
+                    <button>View Requests</button>
+                    <button>Message Vendors</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Modal for Vendor Registration -->
+    <div id="vendor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Vendor Registration</h3>
+            <form id="vendor-registration-form">
+                <label for="vendorName">Vendor Name:</label>
+                <input type="text" id="vendorName" name="vendorName" required />
+
+                <label for="product">Product/Service:</label>
+                <input type="text" id="product" name="product" required />
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required />
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="src/vendor_system_script.js"></script>
+</body>
+
+</html>
